@@ -12,8 +12,13 @@
 - Datacenter—A network that hosts only servers and storage, not end user client devices.
 ##
 # 🖥️ Client-Server vs. 🤝 Peer-to-Peer Networks 
-End system nodes can be classified as either clients or servers:
+## 👉 **End system nodes** can be classified as either clients or servers:
 
 - A ***server*** makes network applications and resources available to other hosts.
 - A ***client*** consumes the services provided by servers.
+
 ## ⚙️ Wide Area Networks
+- A wide area network (WAN) is a network of networks, connected by long-distance links. A typical enterprise WAN would connect a main office site with multiple branch office sites, possibly in different countries.
+- A WAN could link two or more large LANs or could be used for remote workers connecting to an enterprise network via a public network such as the Internet.
+- WAN links are also used to connect datacenters to one another.
+- WANs are likely to use leased network devices and links, operated and managed by a service provider.
