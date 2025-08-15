@@ -38,7 +38,7 @@ Every device gets its **own dedicated cable** (usually Ethernet – Cat5e/Cat6) 
 - But… more cables = more $$$ and mess! 💸😅
 
 > 📏 Number of cables? = **Number of devices!**  
-So 10 devices? 10 cables! 🤯
+So 10 devices? 10 cables! 
 
 ---
 
