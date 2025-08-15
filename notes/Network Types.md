@@ -1,6 +1,6 @@
 # 🦖 Network Types 
 - A ***network type*** refers primarily to its size and scope.
-- The size of a network can be measured as the number of nodes, while the scope refers to the area over which nodes sharing the same network address are distributed.
+- The ***size*** of a network can be measured as the ***number of nodes***, while the ***scope*** refers to the area over which nodes sharing the same network address are distributed.
 ## ⭐ Local Area Networks
   - A local area network (LAN) is confined to a single geographical location. In a LAN, all nodes and segments are directly connected with cables or short-range wireless technologies. 
       - Most of the network infrastructure in a LAN would be directly owned and managed by a single organization
