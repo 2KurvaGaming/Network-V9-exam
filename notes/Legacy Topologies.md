@@ -6,11 +6,14 @@
 
 ### 🌐 **BUS TOPOLOGY** 🚌  
 🔹 **What It Is**:  
-📡 A bus topology consists of a trunk cable with nodes either inserted directly into the trunk or tapped into the trunk using offshoot cables called drop cables. 
-- A device called a terminator is placed at both ends of the trunk cable.
+📡 A bus topology consists of a trunk cable with nodes either inserted directly into the trunk or tapped into the trunk using offshoot cables called drop cables (coaxial cables. 
+- A device called a terminator is placed at both ends of the trunk cable. (BNC Connector or **T** Connectors)
+  
+ <img width="815" height="519" alt="Screenshot 2025-08-15 123625" src="https://github.com/user-attachments/assets/9e0cb8e3-3f06-405d-a7ea-93a5c38fd902" />
+ 
 - Their purpose is to absorb signals, preventing them from reflecting repeatedly back and forth on the cable.
 - Signals travel from one node to all other nodes.
-- The major downside of using a bus topology is that a broken cable anywhere on the bus breaks the termination and prevents communications between all devices on the network.
+- The major downside of using a bus topology is that a broken cable anywhere on the bus breaks the termination and prevents               communications between all devices on the network.
 - This can make it difficult to isolate cabling problems.
 
 👉 All devices are connected to a **single central cable** — the “bus” or “backbone”! 🚍💻  
