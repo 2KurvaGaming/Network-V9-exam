@@ -1,7 +1,7 @@
 # 💻 Network Topology 
 
 ## 👆 Where the ***TYPE*** defines the network scope,  
-  - The **topology** describes the physical or logical structure of the network in terms of nodes and links.
+  - The **topology** describes the physical or logical structure or layout of how a network communicates with different devices. (In terms of nodes and links).
     
 👉 A network's ***physical topology*** describes the placement of nodes and how they are connected by the transmission media.
 💡 For example, in one network, nodes might be directly connected via a single cable;  
