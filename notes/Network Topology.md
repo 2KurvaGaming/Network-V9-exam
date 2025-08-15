@@ -27,7 +27,7 @@ Think of it as the **highway system** for data 🚗💨—without roads (or airw
 
 ## It’s split into **two main categories** 
 
-## 1️⃣ Wired (Guided) Transmission Media  (STAR ⭐ 
+## 1️⃣ Wired (Guided) Transmission Media  (STAR ⭐ RING 💍
 These use **physical cables** to send data as electrical signals, light, or radio waves.
 
 ### 🔹 a. Twisted Pair Cable
