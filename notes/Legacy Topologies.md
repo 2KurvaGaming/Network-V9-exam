@@ -1,5 +1,7 @@
-# Ⓜ️ Most modern networks use the ⭐ star topology due to its reliability and scalability. However, there are **2 legacy topologies** that you should still be familiar with: **Bus topology and the Ring topology**. 
-- Although these topologies may no longer be in widespread use, you will still often find them in legacy systems or in specific niche situations.⭐
+# Ⓜ️ Most modern networks use the ⭐ star topology due to its reliability and scalability. 
+
+  However, there are **2 legacy topologies**         that you should still be familiar with: **Bus topology and the Ring topology**. 
+- Although these topologies may no longer be in widespread use, you will still often find them in legacy systems or in specific niche     situations.⭐
 ---
 # 🚌 Bus Typology
 <img width="133" height="75" alt="bus_topology" src="https://github.com/user-attachments/assets/01da8336-41d2-44fc-9ed0-c51490a68f10" />
@@ -34,7 +36,12 @@
 ❌ Can get **slow with traffic** — like a traffic jam on the info highway! 🚗🚦  
 ❌ Not scalable — doesn’t work well for big networks 📉  
 ❌ ***REQUIRES** The use of a terminator at both ends of the Backbone 🩻 
-
+❌ To remain operational, there must NOT be any OPEN connections 📉 
+    -  Including the ends that attach to the computers.
+👉 For Example, if a computer is removed or if the terminators are loose or missing, then the cable would be OPEN and data would           **bounce back**. 
+🪞 This bounce is known as ***Signal Reflection***
+  - If this happens. Data Flow would be disrupted.
+    
 🚫 **Best For**:  
 👉 Small, temporary, or simple networks only!  
 🚫 Not ideal for large businesses or high-traffic areas!  
