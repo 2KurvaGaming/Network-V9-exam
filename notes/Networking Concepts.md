@@ -79,7 +79,6 @@ So in short:
 
 ⭐ An appliance can be deployed as physical hardware, meaning that the appliance OS/software runs on its own CPU, memory, storage, and network interfaces.
 - It is also possible to deploy virtual appliances.
-  - It is also possible to deploy virtual appliances.
   - The same hypervisor computer could run multiple virtual appliances.
       
 👉 Applications 
