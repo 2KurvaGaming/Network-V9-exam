@@ -170,7 +170,7 @@ So in short:
 👉 Applications 
 - The nodes and links of the networking infrastructure are deployed to run services.
   - Services are shared applications that allow the network to do useful work, such as sharing files or allowing employees to send email.
-          
+
 👉 Functions
 - Networks can be configured with additional properties to perform different functions.
   - For example, the security properties of a virtual private network allow devices to join a local network from across the Internet.
