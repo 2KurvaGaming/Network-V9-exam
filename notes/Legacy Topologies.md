@@ -33,6 +33,7 @@
 ❌ **Single point of failure** — if the main cable breaks, the *whole network goes down* 😱  
 ❌ Can get **slow with traffic** — like a traffic jam on the info highway! 🚗🚦  
 ❌ Not scalable — doesn’t work well for big networks 📉  
+❌ ***REQUIRES** The use of a terminator at both ends of the Backbone 🩻 
 
 🚫 **Best For**:  
 👉 Small, temporary, or simple networks only!  
