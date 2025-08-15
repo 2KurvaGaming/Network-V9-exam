@@ -27,7 +27,7 @@ Think of it as the **highway system** for data 🚗💨—without roads (or airw
 
 ## It’s split into **two main categories** 
 
-## 1️⃣ Wired (Guided) Transmission Media  (STAR ⭐ RING 💍
+## 1️⃣ Wired (Guided) Transmission Media  (STAR ⭐ RING 💍 MESH 🥅)
 These use **physical cables** to send data as electrical signals, light, or radio waves.
 
 ### 🔹 a. Twisted Pair Cable
@@ -38,7 +38,7 @@ These use **physical cables** to send data as electrical signals, light, or radi
   - **STP (Shielded Twisted Pair)** – Has extra shielding; used in noisy environments.
 
 ✅ Pros: Affordable, easy to install  
-  - If one computer failed, or if there wsa a break in the cable, the other computers would not be affected because each computer          has their own cable connection.
+  - If one computer failed, or if there wsa a break in the cable, the other computers would not be affected because each computer          has its own cable connection.
 ❌ Cons: Limited distance (~100 meters), can be affected by interference
 
 ---
@@ -71,7 +71,7 @@ These use **physical cables** to send data as electrical signals, light, or radi
 
 ---
 
-## 2️⃣ Wireless (Unguided) Transmission Media  
+## 2️⃣ Wireless (Unguided) Transmission Media  (
 No cables! Data travels through the **air** using electromagnetic waves.
 
 ### 🔹 a. Radio Waves
