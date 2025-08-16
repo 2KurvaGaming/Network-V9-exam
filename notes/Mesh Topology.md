@@ -61,30 +61,29 @@ Total connections = (N × (N − 1)) ÷ 2
 ✨ Let’s Crunch the Numbers: 5 Nodes
 Plug into the formula:
 
->C = 5 × (5 − 1) ÷ 2
->
->C = 5 × 4 ÷ 2
->
->C = 20 ÷ 2
->
-> C = 10 ✅
->
+Plug into the formula:  
+> **C = 5 × (5 − 1) ÷ 2**  
+> **C = 5 × 4 ÷ 2**  
+> **C = 20 ÷ 2**  
+> **C = 10** ✅  
+
 So… 10 connections needed!
 
-🖼️ Visualize It: 5 Devices (A, B, C, D, E)
-Let’s list the unique connections:
+### 🖼️ Visualize It: 5 Devices (A, B, C, D, E)  
 
-A — B
-A — C
-A — D
-A — E
-B — C
-B — D
-B — E
-C — D
-C — E
-D — E
-🎉 That’s 10 — no repeats!
+Let’s list the **unique** connections:  
+
+1. A — B  
+2. A — C  
+3. A — D  
+4. A — E  
+5. B — C  
+6. B — D  
+7. B — E  
+8. C — D  
+9. C — E  
+10. D — E  
+✅ That’s 10 — no repeats!
 
 No A—A (no selfies in networking! 🙅‍♀️)
 And we don’t list B—A again — already counted as A—B!
@@ -174,6 +173,7 @@ It finds a new path and keeps going. **NO INTERRUPTION!** 🙌🔥
 |❌ **💸 Expensive** | TONS of cables/connections and Networking = high cost! |
 |❌ **🧩 Complex Setup** | More links = harder to install & manage |
 |❌ **🏢 Rarely used on** | LANs | |
+|❌ **🧮 HARD to manage at scale** | 4,950 connections for 100 devices? No thanks | |
 
 ---
 # 🥅 A mesh topology is commonly used in WANs, especially public networks such as the Internet.
@@ -185,12 +185,26 @@ It finds a new path and keeps going. **NO INTERRUPTION!** 🙌🔥
 - For example, a network of just four nodes would require six links, while a network of 40 nodes would need 780 links!  
     - Consequently, a hybrid approach is often used, with only the most important devices interconnected in the mesh, perhaps          with extra links for fault tolerance and redundancy.
       
-👉 - This type of topology is referred to as a partial mesh
+👉 This type of topology is referred to as a **Partial Mesh**
 ---
 
 <img width="768" height="412" alt="mesh_topology" src="https://github.com/user-attachments/assets/e97c5249-347e-4da2-9bc3-bd13d5f0e078" />
 
 ###### The image consists of two diagrams and accompanying text boxes that describe mesh network topologies: Left Diagram (Fully Connected Mesh) Six nodes (labeled 1 through 6) are each connected by lines to every other node, illustrating a full mesh topology. The text explains that in a fully connected mesh network, each node has a point-to-point link with every other node. As the number of nodes increases, the number of required links increases rapidly, according to the formula n(n–1)/2, where n is the number of nodes.Right Diagram (Partial Mesh) The same six nodes are shown, but only some nodes are directly linked to each other with solid or dashed lines. The text here says that provisioning so many interfaces and links is difficult, so partial mesh networks are often preferred. In this topology, some nodes can forward packets to a destination by learning the network topology, even if not directly connected to every node. Additional text below mentions that packets can take multiple routes through the network, offering resilience if some nodes or links fail. Solid and dashed arrows in the partial mesh diagram illustrate alternative paths that data can take between nodes (for example, if node 4 fails), highlighting the concept of redundancy and fault tolerance
+
+## 📊 Quick Reference Table:  
+
+| Number of Nodes (N) | Connections (C = N(N−1)/2) |
+|---------------------|----------------------------|
+| 2                   | 2×1÷2 = **1**              |
+| 3                   | 3×2÷2 = **3**              |
+| 4                   | 4×3÷2 = **6**              |
+| 5                   | 5×4÷2 = **10**             |
+| 6                   | 6×5÷2 = **15**             |
+| 10                  | 10×9÷2 = **45**            |
+| 100                 | 100×99÷2 = **4,950** 😳🔥   |
+
+👉 See how it **grows fast**? That’s why full mesh is only used for **critical, small networks** (like core routers)!  
 
 🥅 Mesh networks provide excellent redundancy because other routes, via intermediary devices, are available between locations if a link failure occurs.
 ---
