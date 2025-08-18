@@ -51,9 +51,12 @@ So 10 devices? 10 cables!
 
 ✅ Result? **Less traffic. Less collisions. More speed!** 🚀💨
 
+⛓️‍💥 A ***cable break*** in a star topology means that ***THE DEVICE*** connected to the ***central device*** (hub or switch) through          ***that cable*** (alone) can no longer communicate on the network. 
+💅 All other hosts will be able to communicate with all other devices.
+
 ---
 
-## ✅ Why Star Topology SLAYS! 👑💅
+## ✅ Why Star Topology SLAYS! 👑
 
 | 💚 Advantage | What It Means |
 |------------|---------------|
