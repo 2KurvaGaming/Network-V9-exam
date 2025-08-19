@@ -1,4 +1,4 @@
-<h1 align="center">Layer 1 Physical</h1>
+<h1 align="center">Layer 2 Data Link</h1>
 
 # 🖇️ Data Link Layer is referred to as Layer 2.
 
