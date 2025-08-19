@@ -64,6 +64,10 @@ So in short:
 > They stand for:
 > - **DSAP** – Destination Service Access Point  
 > - **SSAP** – Source Service Access Point
+> - 🧠 Memory Trick:
+> - "DSAP = Where it’s going.
+> - "SSAP = Where it came from."
+> - Think: "Destination = To, Source = From"
 
 - LLC supports multiplexing, allowing multiple network protocols (like IPv4, IPv6, IPX) to share the same physical link.
 - It works in conjunction with the MAC sublayer to manage communication between devices on a local network.
