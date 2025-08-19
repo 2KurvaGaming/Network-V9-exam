@@ -45,6 +45,30 @@
 > ⚠️ **Note:** Hubs and repeaters operate **only** at Layer 1 — they don’t read MAC/IP addresses.
 
 ---
+### 🔧 Devices that operate at the Physical layer include the following:
+
+| **Device** | **Function** | **How It Works** | **Real-World Example** |
+|-----------|--------------|-------------------|--------------------------|
+| **Transceiver** 🔁 | Sends and receives signals over network media | Converts digital data from a device into signals (electrical, optical, or radio) for transmission and vice versa | Built into NICs; also standalone (e.g., SFP modules in switches) |
+| **Repeater** 🔊 | Amplifies or regenerates weak signals to extend cable distance | Receives a weak signal, cleans and boosts it, then retransmits it | Used in long Ethernet or fiber runs (e.g., between buildings) |
+| **Hub** 🧩 | Multiport repeater; connects multiple devices in a star topology | Broadcasts incoming data on one port to *all* other ports (no filtering or intelligence) | Old office networks (mostly obsolete, replaced by switches) |
+| **Media Converter** 🔀 | Converts one type of physical signal to another | Changes media type (e.g., copper to fiber) while preserving data | Connect a fiber backbone to a copper-based LAN |
+
+---
+
+### 🎯 Key Exam Tips:
+- ✅ All these devices work with **raw bits** — they don’t read MAC or IP addresses.
+- ❌ **Hubs and repeaters do NOT segment networks or reduce collisions** — they actually extend collision domains!
+- 💡 **Media converters** help connect incompatible cabling types without changing higher-layer data.
+
+---
+
+### 🧠 Memory Trick:
+> **"Layer 1 Devices = Dumb but Helpful!"**  
+> They **boost**, **broadcast**, or **convert** signals — but never **decide**.
+
+---
+---
 
 ### 🖥️ Physical Layer Technologies at a Glance
 
