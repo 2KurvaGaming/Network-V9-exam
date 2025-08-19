@@ -57,15 +57,18 @@ So in short:
 - LLC is responsible for managing frame synchronization, flow control, and error checking.
 - It helps ensure reliable data transfer across the physical link.
 - The LLC sublayer can support both connectionless and connection-oriented services.
-
----
-
-### **Logical Link Control**
 - Logical Link Control (LLC) frames the data and prepares it for transmission over the physical medium.
 - It adds control information to the frame, including service access points (DSAP and SSAP), which identify the sending and receiving protocols.
+  
+> **DASP** and **SSAP** are **obsolete** fields from the **IEEE 802.2 Logical Link Control (LLC)** header used in early **Data Link Layer** protocols like **Token Ring** and **early Ethernet**.  
+> They stand for:
+> - **DSAP** – Destination Service Access Point  
+> - **SSAP** – Source Service Access Point
+
 - LLC supports multiplexing, allowing multiple network protocols (like IPv4, IPv6, IPX) to share the same physical link.
 - It works in conjunction with the MAC sublayer to manage communication between devices on a local network.
-- IEEE 802.2 standard defines the LLC sublayer and its operations.
+- - IEEE 802.2 standard defines the LLC sublayer and its operations.
+
 ---
 
 ## ⭐ Local networks rely on centralized connectivity rather than direct point-to-point or mesh links between hosts.  
@@ -76,14 +79,11 @@ So in short:
 
 ## ⭐ The Data Link layer performs an encapsulation function, organizing the stream of bits from the Physical layer into structured units called ***frames.***
 
-
- <h2 align="center">(Common term for the protocol data unit for layer 2.)</h2> 
+ <h2 align="center">(Common term for the **Protocol Data Unit** (PDU) for layer 2.)</h2> 
  
 - Each **frame** contains a **Network layer packet** as its payload.  
 - The Data Link layer adds control information to the payload in the form of header fields.  
 - These fields include source and destination hardware addresses, plus a basic error check to test if the frame was received intact.
----
-
 
 ---
 
