@@ -1,9 +1,9 @@
 # 💻 Network Topology 
 
-## 👆 Where the ***TYPE*** defines the network scope,  
-  - The **topology** describes the ***physical*** or ***logical*** structure or layout of how a network communicates with different devices. (In terms of nodes and links).
+## 👆 Where the ***TYPE*** defines the network scope, The **topology** describes the ***physical*** or ***logical*** structure or layout of how a network communicates with different devices. (In terms of nodes and links).
+  - In other words -  ( layout of how computers, devices, and cables are connected in a network. )
     
-👉 A network's ***physical topology*** describes the placement of nodes and how they are connected by the transmission media.
+👉 A network's ***physical topology*** describes How devices are physically connected (cables, wires, hardware layout).
 💡 For example, in one network, nodes might be directly connected via a single cable;  
   - In another network, each node might connect to a switching appliance via separate cables.  
   - These two networks have different physical topologies.
@@ -71,7 +71,7 @@ These use **physical cables** to send data as electrical signals, light, or radi
 
 ---
 
-## 2️⃣ Wireless (Unguided) Transmission Media  (
+## 2️⃣ Wireless (Unguided) Transmission Media 
 No cables! Data travels through the **air** using electromagnetic waves.
 
 ### 🔹 a. Radio Waves
@@ -125,10 +125,6 @@ Imagine you’re sending a love letter to your crush 💌:
 
 ---
 
-## 💥 The ***Physical Topology-*** describes the placement of nodes and how they are connected by the transmission media.the network.  
-💡  For example, in one network, nodes might be directly connected via a single cable; in another network, each node might connect to a switching appliance via separate cables.
-  - These two networks have different physical topologies.  
----
 ## 🔶 The ***logical Topology*** topology describes the flow of data through the network.  
 
 ## 🌐 Logical Topology 101: The Digital Vibes! 💬💫
