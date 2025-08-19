@@ -111,26 +111,36 @@ So in short:
 
 ---
 
-## ✨ Data Link layer 2 protocols and technologies
+## 🌐 Data Link Layer (Layer 2) – Protocols & Technologies
 
-- Ethernet (IEEE 802.3)  
-- Wi-Fi (IEEE 802.11 a/b/g/n/ac/ax)  
-- Point-to-Point Protocol (PPP)  
-- High-Level Data Link Control (HDLC)  
-- Frame Relay  
-- Asynchronous Transfer Mode (ATM)  
-- Token Ring (IEEE 802.5)  
-- Fiber Distributed Data Interface (FDDI)  
-- Spanning Tree Protocol (STP) – IEEE 802.1D  
-- Link Aggregation Control Protocol (LACP) – IEEE 802.3ad  
-- VLAN tagging – IEEE 802.1Q  
-- MAC Security (MACsec) – IEEE 802.1AE  
-- Bluetooth – IEEE 802.15.1  
-- Zigbee – IEEE 802.15.4  
-- Layer 2 Tunneling Protocol (L2TP)  
-- Point-to-Point Tunneling Protocol (PPTP)  
-- Local Area Network (LAN)  
-- Virtual LAN (VLAN)  
+| **Protocol / Technology** | **Function / Purpose** | **Key Standard / Notes** | **Exam Tip 🎯** |
+|---------------------------|------------------------|---------------------------|----------------|
+| **Ethernet (IEEE 802.3)** 🖧 | Most common LAN tech; frames data for transmission | IEEE 802.3 (e.g., 1000BASE-T) | Uses MAC addresses; foundation of wired networks |
+| **Wi-Fi (IEEE 802.11)** 📶 | Wireless LAN communication | a/b/g/n/ac/ax (Wi-Fi 4–7) | MAC sublayer manages access to airwaves (CSMA/CA) |
+| **PPP (Point-to-Point Protocol)** 🔗 | Connects two nodes (e.g., dial-up, serial links) | Common in legacy WANs | Supports authentication (PAP/CHAP), used with modems |
+| **HDLC (High-Level Data Link Control)** 🔄 | Cisco default serial link protocol | ISO standard; bit-oriented | Encapsulates data on point-to-point links; vendor-neutral version exists |
+| **Frame Relay** 🚦 | Legacy WAN protocol (packet-switched) | Predecessor to MPLS | Uses DLCIs; operates at Layer 2 over T1 lines |
+| **ATM (Asynchronous Transfer Mode)** ⚡ | Cell-based switching (fixed 53-byte cells) | Used in legacy telco networks | Combined features of circuit & packet switching |
+| **Token Ring (IEEE 802.5)** 🔗 | Legacy ring topology network | IBM technology (mostly obsolete) | Uses token-passing to avoid collisions |
+| **FDDI (Fiber Distributed Data Interface)** 🌉 | High-speed fiber ring network | Dual-ring for fault tolerance | Used in backbones before Ethernet dominated |
+| **Spanning Tree Protocol (STP)** 🌳 | Prevents switching loops in redundant topologies | IEEE 802.1D | Essential for stable Layer 2 networks |
+| **LACP (Link Aggregation Control Protocol)** 🔗🔗 | Bundles multiple physical links into one logical link | IEEE 802.3ad | Increases bandwidth and redundancy (EtherChannel) |
+| **VLAN Tagging (IEEE 802.1Q)** 🏷️ | Tags frames to assign them to a VLAN | Adds 4-byte tag to Ethernet frame | Enables multiple virtual LANs on a single switch |
+| **MACsec (IEEE 802.1AE)** 🔒 | Provides encryption and integrity at Layer 2 | Secures traffic between trusted devices | Protects against MAC spoofing, eavesdropping |
+| **Bluetooth (IEEE 802.15.1)** 🔵 | Short-range wireless personal area network | Piconet scatternet topologies | Operates at Layer 2 for device pairing |
+| **Zigbee (IEEE 802.15.4)** 🌐 | Low-power, low-data-rate mesh networking | Used in IoT (smart home devices) | Efficient for battery-powered sensors |
+| **L2TP (Layer 2 Tunneling Protocol)** 🌐📦 | Tunnels PPP sessions over IP networks | Often paired with IPsec | Used for secure remote access (VPNs) |
+| **PPTP (Point-to-Point Tunneling Protocol)** 📦 | Early tunneling protocol for VPNs | Microsoft legacy tech (insecure) | Avoid in modern networks (weak encryption) |
+| **LAN (Local Area Network)** 🏢 | Network within a small geographic area | Built using switches/hubs | Layer 2 defines how devices communicate locally |
+| **VLAN (Virtual LAN)** 🎭 | Logically segments a physical network | Created via switch configuration | Improves security, performance, and broadcast control |
+
+---
+
+### 🎯 Key Layer 2 Exam Tips:
+- ✅ **PDU = Frame** — Layer 2 deals with **framing** and **MAC addressing**.
+- ✅ **Switches** and **bridges** are the primary Layer 2 devices.
+- ✅ **MAC addresses** (48-bit, e.g., `00:1A:2B:3C:4D:5E`) are used for local delivery.
+- ❌ No routing — Layer 2 doesn’t handle IP addresses or cross-network delivery.
 
 ---
 
