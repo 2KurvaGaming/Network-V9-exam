@@ -116,7 +116,8 @@ End system nodes can be classified as either clients or servers:
 ✨ When we talk about "appliances" in the context of IT, networking, or computer systems, we’re usually not talking about your toaster or fridge (as cool as a smart fridge might be 😂). Instead, we mean hardware devices that are designed to perform specific functions within a network or computing environment.
 
 🔧 What Are (IT) Appliances?
-An appliance in tech is a pre-configured, all-in-one device—combining hardware, software, and firmware—that’s built to do one or more dedicated tasks right out of the box. Think of it like a "smart gadget" for your network.
+📻 An appliance is a computer with an operating system and software designed to perform a particular network role.
+- Pre-configured, all-in-one device — combining hardware, software, and firmware — that’s built to do one or more dedicated tasks right out of the box. Think of it like a "smart gadget" for your network.
 
 They’re designed to be:
 
@@ -127,7 +128,7 @@ Purpose-built
 
 
 ## 🌐 Common Types of IT/Networking Appliances
-  ## ⭐ Appliance	What It Does ⭐
+  ## ⭐ Appliance What It Does ⭐
 
 ⚡- Router Appliance	Directs traffic between networks (like your home internet). Often comes pre-loaded with routing software.
 
