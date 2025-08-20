@@ -30,7 +30,8 @@ These use **physical cables** to send data as electrical signals, light, or radi
   - **STP (Shielded Twisted Pair)** – Has extra shielding; used in noisy environments.
 
 ✅ Pros: Affordable, easy to install  
-  - If one computer failed, or if there wsa a break in the cable, the other computers would not be affected because each computer          has its own cable connection.
+  - If one computer failed, or if there was a break in the cable, the other computers would not be affected because each computer          has its own cable connection.
+    
 ❌ Cons: Limited distance (~100 meters), can be affected by interference
 
 ---
@@ -129,19 +130,27 @@ While physical topology is about how devices are physically connected (cables, l
 
 Think of it like this:
 🎤 You’re at a party (the network).
+
 📍 Physically, everyone’s standing in a circle (physical star, maybe?).
+
 🎶 But the conversation? It flows freely — anyone can shout, whisper, or pass notes.
+
 👉 That flow? That’s logical topology!
 
 ## 🔁 Types of Logical Topology (With Sparkle! 💅)
 
 ## 1️⃣ Logical Bus 🚌📡
+
 🔹 How it works:
+
 📍 Only one device can transmit at a time
+
 📍 Data travels to all devices — like a broadcast!
+
 ☑️ Devices check: “Is this for me?” 👀
 
 🔹 Real-World Example:
+
 🖥️ Old Ethernet networks using hubs (yes, even in a physical star)
     Think: “Shout in a room — only one person talks at a time!” 🗣️🔇
 
@@ -150,9 +159,13 @@ Think of it like this:
  (Everyone hears it… but only Printer responds.)
 
 ## 2️⃣ Logical Ring 🔁💍
+
 🔹 How it works:
+
   🪙 Devices take turns using a token 
-    Only the device with the token can send data
+  
+  Only the device with the token can send data
+   
    🎤➡️🎤 Token passes around like a mic at karaoke! 
 
 🔹 Real-World Example:
