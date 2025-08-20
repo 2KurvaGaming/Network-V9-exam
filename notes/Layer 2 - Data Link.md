@@ -32,7 +32,7 @@
 ---
 
 ✨ **Real-World Example:**  
-Imagine a company where Finance, HR, and IT are on different floors but use the same physical network. By creating **three VLANs** (one for each department), the network admin defines **three logical segments** at the Data Link layer — keeping traffic separate and secure, even though they share the same switches and cables.
+Imagine a company where Finance, HR, and IT are on different floors but use the same physical network. By creating **three VLANs** (one for each department), the network admin defines ***three logical segments*** at the Data Link layer — keeping traffic separate and secure, even though they share the same switches and cables.
 
 ---
 
