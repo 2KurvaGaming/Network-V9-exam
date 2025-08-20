@@ -184,7 +184,7 @@ Physical Topology +	Logical Topology = Real-World Combo⬇️
 🥅 Mesh (wireless **Ad hoc**) 🕸️ Mesh	Zigbee, some Wi-Fi Direct 
   - Doesnt rely on any infrastructure (Cables,Routers,Servers or Wireless Access Points(WAPs)
   - All devices connect to other devices in a simple Peer to Peer Network
-  - Directly connect to each other W/O using a centralized device (Wifi Router or Access Point)
+  - Directly connected W/O using a centralized device (Wifi Router or Access Point)
 👉 Ea device is responsible for its own security and permissions
 
 | Advantage | Useful |
@@ -205,25 +205,34 @@ Physical Topology +	Logical Topology = Real-World Combo⬇️
 
 👉 But if it’s using a hub, it’s ***physically a star ⭐***, but ***🧠logically a bus 🚌 too*** — because data goes to everyone! 🤯✨
 
-✅ Why Logical Topology Matters:
+## ✅ Why Logical Topology Matters:
 
 🚦 Determines how data flows and avoids collisions
+
 🛠️ Affects performance, speed, and efficiency
+
 🎯 Helps you pick the right tech (switch vs. hub, Zigbee vs. Wi-Fi, etc.)
+
 📜 Key for certs like CompTIA Network+ and CCNA! 
 
-💡 Quick Recap:
+### 💡 Quick Recap:
+
 Logical Topology	Key Feature	Best For
+
 Bus 🚌	One-at-a-time broadcast	Simple, older networks
+
 Ring 🔁	Token-passing, no collisions	Controlled environments
+
 Star/Mesh (modern)	Direct or dynamic paths
+
 💡  For example, given the different physical network topologies described previously,  
   - If in each case the nodes can send messages to one another, the logical topology is the same.  
   - The different physical implementations—directly connected via a cable versus connected to the same switch—achieve the same logical layout.
     
-👌 In the simplest type of topology, a single link is established between two nodes.  
-- This is called a point-to-point link.  
-- Because only two devices share the connection, they are guaranteed a level of bandwidth.
+### 👌 In the simplest type of topology, a single link is established between two nodes.  
+💥- This is called a point-to-point link.  
+    - 🤝 Because only two devices share the connection, they are guaranteed a level of bandwidth.
+    
 ---
 ## 🔶 Physical point to point topologies using different media types for half-duplex and duplex communications. 
 
