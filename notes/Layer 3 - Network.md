@@ -119,16 +119,6 @@ While Layer 2 (Data Link) handles communication within a single network using MA
 | **IGMP** | Manages multicast group memberships | Used in video streaming, online gaming |
 
 
-## 🎯 Exam Tips (CompTIA Network+, CCNA, etc.)
-
-- ✅ **Layer 3 = Logical Addressing = IP Addressing**
-- ✅ **Routers use logical addresses** to forward packets between networks.
-- ✅ Know the difference between **public vs. private IP addresses**.
-- ✅ Understand that **IP is connectionless and unreliable** — it doesn’t guarantee delivery (that’s Transport Layer’s job).
-- ✅ Be familiar with **IPv4 classes** (A, B, C) and **CIDR notation** (e.g., `/24`).
-- ✅ **DHCP** assigns logical addresses automatically; **static IP** means manual assignment.
-
----
 
 ## 🧠 Quick Summary
 
@@ -139,7 +129,22 @@ While Layer 2 (Data Link) handles communication within a single network using MA
 > 🌐 *Physical address (MAC) = Who you are (locally)*  
 > 🌍 *Logical address (IP) = Where you are (globally)
 
+> - **Switches** = same network (Layer 2) → use **MAC addresses**  
+> - **Routers** = different networks (Layer 3) → use **IP addresses**
 
+> - **Router** 🔄 – The **primary device** that operates at Layer 3. Makes decisions based on **IP addresses**.
+> - **Layer 3 Switch** ⚡ – A switch with routing capabilities. Common for **inter-VLAN routing** in enterprise networks.
+
+## 🎯 Exam Tips (CompTIA Network+, CCNA, etc.)
+
+- ✅ **Layer 3 = Logical Addressing = IP Addressing**
+- ✅ **Routers use logical addresses** to forward packets between networks.
+- ✅ Know the difference between **public vs. private IP addresses**.
+- ✅ Understand that **IP is connectionless and unreliable** — it doesn’t guarantee delivery (that’s Transport Layer’s job).
+- ✅ Be familiar with **IPv4 classes** (A, B, C) and **CIDR notation** (e.g., `/24`).
+- ✅ **DHCP** assigns logical addresses automatically; **static IP** means manual assignment.
+
+---
 
 
 
