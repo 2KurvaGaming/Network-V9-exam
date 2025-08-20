@@ -112,8 +112,6 @@ End system nodes can be classified as either clients or servers:
 
 - 🟪 Appliances — Networks make use of many types of specialized platforms. Unlike general-purpose Windows or macOS computers and servers, an appliance is a computer with an operating system and software designed to perform a particular network role. 
 - Examples of these roles ***include the switches, routers, and wireless access points*** that forward data, the firewalls and intrusion detection systems that enforce security rules, and the load balancers and proxies that improve network performance.
-  
-✨ When we talk about "appliances" in the context of IT, networking, or computer systems, we’re usually not talking about your toaster or fridge (as cool as a smart fridge might be 😂). Instead, we mean hardware devices that are designed to perform specific functions within a network or computing environment.
 
 🔧 What Are (IT) Appliances?
 📻 An appliance is a computer with an operating system and software designed to perform a particular network role.
@@ -121,45 +119,56 @@ End system nodes can be classified as either clients or servers:
 
 They’re designed to be:
 
-Easy to install
-Secure
-Low maintenance
-Purpose-built
+>Easy to install
+>
+>Secure
+>
+>Low maintenance
+>
+>Purpose-built
 
 
 ## 🌐 Common Types of IT/Networking Appliances
   ## ⭐ Appliance What It Does ⭐
 
-⚡- Router Appliance	Directs traffic between networks (like your home internet). Often comes pre-loaded with routing software.
+### 🖧 **Common Network Appliances (Simplified Table)**
 
-🔒- Firewall Appliance	Protects your network by filtering incoming/outgoing traffic. Brands like Fortinet or Palo Alto make these. 
+| Appliance Type               | Description                                                                                     | Key Features & Notes                                                                 |
+|-----------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| **Router**                  | Directs traffic between networks (e.g., from your home network to the internet).                | - Uses IP addresses (Layer 3)<br>- Determines best path for data<br>- Often includes built-in routing software |
+| **Firewall Appliance**      | Protects your network by filtering incoming and outgoing traffic based on security rules.       | - Blocks unauthorized access and malicious traffic<br>- Common brands: Fortinet, Palo Alto, Cisco |
+| **Switch Appliance**        | Connects devices within a local network (e.g., computers, printers, servers).                   | - Operates at Layer 2 (MAC addresses)<br>- Managed switches support VLANs, QoS, and remote management |
+| **Wireless Access Point (WAP)** | Provides Wi-Fi connectivity for wireless devices such as laptops and smartphones.             | - Enables wireless communication on a network<br>- Often integrated into home routers<br>- Used in offices for coverage |
+| **Storage Appliance**       | Dedicated device for storing and managing data across a network.                                | - Example: NAS (Network Attached Storage)<br>- Used for file sharing, backups, and centralized data |
+| **Security Appliance**      | All-in-one device combining firewall, antivirus, intrusion detection, and other security tools. | - Also known as UTM (Unified Threat Management)<br>- Ideal for small to medium-sized businesses |
+| **Proxy Appliance**         | Acts as an intermediary between users and the internet.                                         | - Used for content filtering, caching, logging, and improved privacy<br>- Can enhance performance by storing frequently accessed web content |
 
-♻️- Switch Appliance	Connects devices within a local network (like computers, printers). Managed switches can have advanced features.
+---
 
-📶- Wireless Access Point (WAP) Appliance	Provides Wi-Fi connectivity. Think of your home Wi-Fi router—it’s actually a combo appliance!
+## ✅ Why Use Appliances?
 
-💾- Storage Appliance	Dedicated device for storing and managing data (like a NAS – Network Attached Storage). 
-
-🔒- Security Appliance	Combines firewall, antivirus, intrusion detection, and more in one box.
-
-🙆‍♂️- Proxy Appliance	Acts as a middleman between users and the internet—used for filtering, caching, or privacy.
-
-✅ Why Use Appliances?
 Plug-and-play: Minimal setup needed.
+
 Optimized performance: Hardware and software are fine-tuned to work together.
+
 Security: Often locked down, reducing vulnerabilities.
+
 Support: Vendors provide updates and patches.
 
-🏠 Real-Life Example:
+## 🏠 Real-Life Example:
 Your home router is actually a network appliance! It combines:
 
 A router ✅
+
 A switch (for wired ports) ✅
+
 A Wi-Fi access point ✅
+
 A basic firewall ✅
+
 All in one little box—boom! 💥
 
-So in short:
+## So in short:
 📦 Tech Appliance = Hardware + Software + Purpose-Built Function
 
 💥 They make life easier by doing one job really well—no need to install and configure everything from scratch!
