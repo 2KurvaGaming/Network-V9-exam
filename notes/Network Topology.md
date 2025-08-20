@@ -4,7 +4,9 @@
   - In other words -  ( layout of how computers, devices, and cables are connected in a network. )
     
 👉 A network's ***physical topology*** describes How devices are physically connected (cables, wires, hardware layout).
+
 💡 For example, in one network, nodes might be directly connected via a single cable;  
+
   - In another network, each node might connect to a switching appliance via separate cables.  
   - These two networks have different physical topologies.
 
@@ -13,19 +15,9 @@ Transmission media refers to the physical or wireless pathways that carry data s
 
 Think of it as the highway system for data 🚗💨—without roads (or airwaves), information can’t travel from one node to another.
 
-Yes, let’s break down **"transmission media"**—because now you’re diving into the *veins* of a network! 💡🩸
-
 ---
 
-### 🌐 What Is Transmission Media?
-
-> **Transmission media** refers to the **physical or wireless pathways** that carry data signals between devices (nodes) on a network.
-
-Think of it as the **highway system** for data 🚗💨—without roads (or airwaves), information can’t travel from one node to another.
-
----
-
-## It’s split into **two main categories** 
+## It’s split into **two main categories** 1️⃣ Wired & 2️⃣ Wireless
 
 ## 1️⃣ Wired (Guided) Transmission Media  (STAR ⭐ RING 💍 MESH 🥅)
 These use **physical cables** to send data as electrical signals, light, or radio waves.
