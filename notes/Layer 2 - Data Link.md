@@ -49,6 +49,7 @@ So in short:
 - They are used to identify devices on the same local network segment.
 - The first half of the address identifies the manufacturer (OUI), while the second half is the device-specific identifier.
 - MAC addresses enable communication within the same Layer 2 network by ensuring frames are delivered to the correct physical device.
+- The frame, as the Layer 2 PDU, encapsulates packets received from the network layer (Layer 3) and prepares them for transmission as    bits at the physical layer (Layer 1)
 - IEEE 802.1 standard defines the LLC sublayer and its operations.
 
 ---
@@ -73,7 +74,7 @@ So in short:
 
 - LLC supports multiplexing, allowing multiple network protocols (like IPv4, IPv6, IPX) to share the same physical link.
 - It works in conjunction with the MAC sublayer to manage communication between devices on a local network.
-- - IEEE 802.2 standard defines the LLC sublayer and its operations.
+- IEEE 802.2 standard defines the LLC sublayer and its operations.
 
 ---
 
@@ -87,9 +88,61 @@ So in short:
 
  <h2 align="center">(Common term for the **Protocol Data Unit** (PDU) for layer 2.)</h2> 
  
-- Each **frame** contains a **Network layer packet** as its payload.  
+- Each **frame** Contains the data from higher layers, along with headers and trailers added by the data link layer.
+- These headers include the source and destination MAC (Media Access Control) addresses, which are used for physical addressing within the local network
+- The trailer often includes error-checking information, such as a Frame Check Sequence (FCS), to detect transmission errors
 - The Data Link layer adds control information to the payload in the form of header fields.  
-- These fields include source and destination hardware addresses, plus a basic error check to test if the frame was received intact.
+
+### 🔹 What is a Protocol Data Unit (PDU)?
+A **Protocol Data Unit (PDU)** is a general term used in networking to describe the **"package" of data** at each layer of the OSI or TCP/IP model. Each layer has its own PDU because each adds its own header (and sometimes trailer) to the data.
+
+Here’s a quick reference:
+
+| Layer | Name | PDU |
+|------|------|-----|
+| 7–5 | Application, Presentation, Session | **Message/Data** |
+| 4 | Transport | **Segment** (TCP) or **Datagram** (UDP) |
+| 3 | Network | **Packet** |
+| 2 | Data Link | **Frame** |
+| 1 | Physical | **Bit** |
+
+👉 So, the **PDU at Layer 2 is called a *frame***.
+
+---
+
+### 🔹 So… Are "PDU" and "Frame" Interchangeable at Layer 2?
+
+✅ **Yes—but only at Layer 2.**
+
+- **"PDU"** is the *generic term* used across all layers.
+- **"Frame"** is the *specific name* of the PDU **only at Layer 2**.
+
+Think of it like this:
+- "Vehicle" is a general term (like *PDU*).
+- "Car" is a specific type of vehicle (like a *frame* at Layer 2).
+
+So:
+> At Layer 2, the **PDU = Frame**.  
+> They mean the same thing in this context.
+
+---
+
+### 🔹 What’s Actually *In* a Frame?
+When data comes down from Layer 3 (the network layer), it arrives as a **packet**.  
+At Layer 2, that packet gets wrapped inside a **frame**, which adds:
+
+- **Header**: Includes the **source and destination MAC addresses**.
+- **Payload**: The actual data (the packet from Layer 3).
+- **Trailer**: Usually contains error-checking info like **FCS (Frame Check Sequence)**.
+
+Then, this whole thing — header + payload + trailer — is sent to Layer 1, where it becomes bits on a wire or Wi-Fi signal.
+
+---
+
+### ✅ Summary
+- **PDU** = General term for data package at any layer.
+- **Frame** = The *specific name* of the PDU at **Layer 2**.
+- So: **At Layer 2, “frame” and “PDU” refer to the same thing.**
 
 ---
 
@@ -103,6 +156,9 @@ So in short:
 ###### The third step explains that the switch monitors which hardware addresses are associated with which of its ports. Upon receiving the frame addressed to AC, the switch looks up its records and forwards the frame out through port G3, since host AC is connected there.
 ###### The fourth step shows host AC receiving the frame, recognizing the destination address as its own, and processing the data.
 ###### This diagram visually demonstrates frame delivery at the Data Link layer, using MAC addresses for local communication, forwarding, and identification among devices sharing a logical segment.
+
+
+
 
 ## Devices that operate at the Data Link Layer include the following:
 
