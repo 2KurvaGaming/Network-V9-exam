@@ -157,9 +157,6 @@ Then, this whole thing — header + payload + trailer — is sent to Layer 1, wh
 ###### The fourth step shows host AC receiving the frame, recognizing the destination address as its own, and processing the data.
 ###### This diagram visually demonstrates frame delivery at the Data Link layer, using MAC addresses for local communication, forwarding, and identification among devices sharing a logical segment.
 
-
-
-
 ## Devices that operate at the Data Link Layer include the following:
 
 - Network adapter or network interface card (NIC)—A NIC joins an end system host to network media (cabling or wireless) and enables it to communicate over the network by assembling and disassembling frames.
@@ -170,6 +167,15 @@ Then, this whole thing — header + payload + trailer — is sent to Layer 1, wh
     (Intermediate system used to establish contention-free network segments at OSI layer 2 (Data Link). An unmanaged switch does not         support any sort of configuration.)
 - Wireless access point (AP) - An AP allows nodes with wireless network cards to communicate and creates a bridge between wireless networks and wired ones.
       (A device that provides a connection between wireless devices and can connect to wired networks, implementing an infrastructure mode WLAN.)
+  
+---
+
+| **Device**                     | **Function**                                                                                                      |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Network Adapter / NIC**     | Connects an end system (host) to network media (wired or wireless); enables communication by assembling/disassembling data frames. |
+| **Bridge**                      | Connects physical network segments; reduces performance issues caused by too many nodes on one network. Has multiple ports, each acting as a network interface. |
+| **Switch**                      | An advanced bridge with many ports; efficiently creates connections between numerous nodes in a network.         |
+| **Wireless Access Point (AP)**  | Enables wireless devices to connect to the network; bridges communication between wireless and wired network segments. |
 
 ---
 
