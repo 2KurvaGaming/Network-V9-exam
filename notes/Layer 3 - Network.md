@@ -5,12 +5,15 @@
 ### Logical network addressing and forwarding (Kinda like a GPS)
 
 🧩 Main Responsibilities of the Network Layer
+---
 
 🔹 It assigns an IP address to the data and determines the best route through the network. Making sure it reaches the right destination.
 
 🔹 The Network Layer 3 is responsible for enabling communication between devices on different networks — not just within the same local network. 
 
-🔹 The networks are often heterogeneous; that is, they use a variety of Physical layer media and Data Link protocols. The main appliance working at layer 3 is the router.
+🔹 The networks are often heterogeneous; that is, they use a variety of Physical layer media and Data Link protocols. T
+
+🔹 The main appliance working at layer 3 is the router.
 
 🔹 While Layer 2 (Data Link) handles communication within a single network using MAC addresses
 
@@ -120,43 +123,6 @@
 
 ---
 
-## 🗝️ **Key Protocols & Technologies**
-
-| Protocol | Purpose | Notes |
-|--------|--------|-------|
-| **IP (Internet Protocol)** | Core protocol for addressing and routing | IPv4 (most common), IPv6 (future-proof) |
-| **ICMP (Internet Control Message Protocol)** | Used for diagnostics (`ping`, `traceroute`) | Not for user data |
-| **ARP** ⚠️ | Maps IP → MAC (operates at Layer 2/3 boundary) | Critical for local delivery |
-| **RIP (Routing Information Protocol)** | Distance-vector routing protocol that uses hop count to determine best path | Max 15 hops; best for small, simple networks |
-| **SPF (Shortest Path First)** | Algorithm used by link-state protocols to calculate the shortest path to a destination | Core of OSPF; recalculates dynamically when network changes occur |
-| **OSPF (Open Shortest Path First)** | Link-state routing protocol that builds a complete map of the network for fast convergence | Uses SPF algorithm; scalable for large enterprise networks |
-| **EIGRP (Enhanced Interior Gateway Routing Protocol)** | Advanced distance-vector protocol that uses multiple metrics (bandwidth, delay) to find best path | Cisco-proprietary; fast convergence and loop-free routing |
-| **IGMP** | Manages multicast group memberships | Used in video streaming, online gaming |
-| **IP (Internet Protocol)** | Core protocol for addressing and routing | IPv4 (most common), IPv6 (future-proof) |
-| **RARP (Reverse Address Resolution Protocol)** | Maps a MAC address to an IP address | Used in older networks; largely replaced by BOOTP and DHCP |
-| **ATM (Asynchronous Transfer Mode)** | High-speed cell-based networking for voice, video, and data | Uses fixed-size cells (53 bytes); common in legacy WANs |
-| **IS-IS (Intermediate System to Intermediate System)** | Link-state routing protocol for routing data within a network | Commonly used in large ISPs and backbone networks; works well with OSI model |
-| **IPsec (Internet Protocol Security)** | Secures IP communications by authenticating and encrypting packets | Operates at Network layer; often used in VPNs |
-| **ICMP (Internet Control Message Protocol)** | Reports errors and sends operational info for IP networks | Used by tools like `ping` and `traceroute` |
-| **MPLS (Multiprotocol Label Switching)** | Speeds up and shapes network traffic flows | Uses labels instead of IP addresses for fast forwarding; sits between Layers 2 and 3 |
-
-## 🧠 Quick Summary
-
-> **Logical addressing = IP addressing = How devices are found across networks.**  
-> It’s the foundation of routing and internetwork communication — essential for any network certification.
-
-📌 **Remember**:  
-> 🌐 *Physical address (MAC) = Who you are (locally)*  
-> 🌍 *Logical address (IP) = Where you are (globally)
-
-> - **Switches** = same network (Layer 2) → use **MAC addresses**  
-> - **Routers** = different networks (Layer 3) → use **IP addresses**
-
-> - **Router** 🔄 – The **primary device** that operates at Layer 3. Makes decisions based on **IP addresses**.
-> - **Layer 3 Switch** ⚡ – A switch with routing capabilities. Common for **inter-VLAN routing** in enterprise networks.
-
----
-
 ###### 🔍 **1. Network Segmentation**  
 Breaking large networks into smaller, manageable pieces for better performance and security.
 
@@ -204,6 +170,45 @@ IP addresses aren’t random — they follow a **smart structure** that helps ro
 
 ---
 
+<h1 align="center">Terms & Definitions</h1>
+
+## 🗝️ **Key Protocols & Technologies**
+
+| Protocol | Purpose | Notes |
+|--------|--------|-------|
+| **IP (Internet Protocol)** | Core protocol for addressing and routing | IPv4 (most common), IPv6 (future-proof) |
+| **ICMP (Internet Control Message Protocol)** | Used for diagnostics (`ping`, `traceroute`) | Not for user data |
+| **ARP** ⚠️ | Maps IP → MAC (operates at Layer 2/3 boundary) | Critical for local delivery |
+| **RIP (Routing Information Protocol)** | Distance-vector routing protocol that uses hop count to determine best path | Max 15 hops; best for small, simple networks |
+| **SPF (Shortest Path First)** | Algorithm used by link-state protocols to calculate the shortest path to a destination | Core of OSPF; recalculates dynamically when network changes occur |
+| **OSPF (Open Shortest Path First)** | Link-state routing protocol that builds a complete map of the network for fast convergence | Uses SPF algorithm; scalable for large enterprise networks |
+| **EIGRP (Enhanced Interior Gateway Routing Protocol)** | Advanced distance-vector protocol that uses multiple metrics (bandwidth, delay) to find best path | Cisco-proprietary; fast convergence and loop-free routing |
+| **IGMP** | Manages multicast group memberships | Used in video streaming, online gaming |
+| **IP (Internet Protocol)** | Core protocol for addressing and routing | IPv4 (most common), IPv6 (future-proof) |
+| **RARP (Reverse Address Resolution Protocol)** | Maps a MAC address to an IP address | Used in older networks; largely replaced by BOOTP and DHCP |
+| **ATM (Asynchronous Transfer Mode)** | High-speed cell-based networking for voice, video, and data | Uses fixed-size cells (53 bytes); common in legacy WANs |
+| **IS-IS (Intermediate System to Intermediate System)** | Link-state routing protocol for routing data within a network | Commonly used in large ISPs and backbone networks; works well with OSI model |
+| **IPsec (Internet Protocol Security)** | Secures IP communications by authenticating and encrypting packets | Operates at Network layer; often used in VPNs |
+| **ICMP (Internet Control Message Protocol)** | Reports errors and sends operational info for IP networks | Used by tools like `ping` and `traceroute` |
+| **MPLS (Multiprotocol Label Switching)** | Speeds up and shapes network traffic flows | Uses labels instead of IP addresses for fast forwarding; sits between Layers 2 and 3 |
+
+## 🧠 Quick Summary
+
+> **Logical addressing = IP addressing = How devices are found across networks.**  
+> It’s the foundation of routing and internetwork communication — essential for any network certification.
+
+📌 **Remember**:  
+> 🌐 *Physical address (MAC) = Who you are (locally)*  
+> 🌍 *Logical address (IP) = Where you are (globally)
+
+> - **Switches** = same network (Layer 2) → use **MAC addresses**  
+> - **Routers** = different networks (Layer 3) → use **IP addresses**
+
+> - **Router** 🔄 – The **primary device** that operates at Layer 3. Makes decisions based on **IP addresses**.
+> - **Layer 3 Switch** ⚡ – A switch with routing capabilities. Common for **inter-VLAN routing** in enterprise networks.
+
+---
+
 🧭 Key Takeaway: Routers = Traffic Directors
 Each router interface has an IP address (e.g., 1.254, 2.254, 9.254).
 Routers forward packets based on network prefixes, not just IPs.
@@ -220,7 +225,4 @@ End-to-end delivery? It’s a team effort across layers and devices!
 - ✅ **DHCP** assigns logical addresses automatically; **static IP** means manual assignment.
 
 ---
-
-
-<h1 align="center">Terms & Definitions</h1>
 
