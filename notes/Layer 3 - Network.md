@@ -1,6 +1,9 @@
 <h1 align="center">Layer 3 Network</h1>
 
 # 🥅 Layer 3 is the Network layer. 
+
+### (Logical network addressing and forwarding.)
+
 ## This layer is responsible for moving data around a network of networks, known as an internetwork. 
 
 🧩 Main Responsibilities of the Network Layer
