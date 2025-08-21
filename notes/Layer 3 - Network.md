@@ -11,11 +11,19 @@ While Layer 2 (Data Link) handles communication within a single network using MA
 📌 Layer 3 steps 🪜 up by using logical IP addresses to identify source and destination devices across interconnected networks, such as the internet.
 
 ## 💪 Its primary job is routing:
-  - Determining the best path for data to travel from the source to the destination, possibly through multiple routers and networks
+  - Determining the best path for data to travel from the source to the destination
+  - Functionality at the network layer is provided through routing protocols which are software components.
+  - Route Selection: determining best path for the data to travel throughout the network
   - It encapsulates data from the Transport Layer into packets and adds a header containing the source and destination IP addresses.
-  - Routers then read this header to make forwarding decisions
   - Supports both unicast and multicast traffic
   - At layer 3, each packet is given a destination network address. Routers are configured with information about how to reach these different logical networks. The packet is forwarded, router by router (or hop by hop), through the internetwork to the target network. Once it has reached the destination network, the hardware address can be used to deliver the packet to the target node.
+
+## 🕸️ Routes can be configured in 2 Ways:
+
+| **Routing Type** | **Definition**                                                                                                      | **Scalability**                                      | **Fault Tolerance**                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------------|
+| **Static**       | Routes are manually configured by a network administrator and do not change unless updated manually.                | Suitable for small, stable networks with minimal changes. | No automatic failover; link failure disrupts connectivity unless manually rerouted. |
+| **Dynamic**      | Routes are automatically updated based on changes in network topology using routing protocols.                      | Ideal for large, complex networks where topology changes frequently. | Supports automatic rerouting and failover upon link failure, ensuring continuous connectivity. |
 
 💥 At layer 3, each packet is given a destination network address. Routers are configured with information about how to reach these different logical networks. The packet is forwarded, router by router (or hop by hop), through the internetwork to the target network. Once it has reached the destination network, the hardware address can be used to deliver the packet to the target node.
     
@@ -42,32 +50,6 @@ While Layer 2 (Data Link) handles communication within a single network using MA
 ###### Dashed arrows indicate the route the packet takes: from host 1.2 to Router A, through Network 9 to Router B, and finally to host 2.3 in Network 2.
 
 ---
-
-🧭 Key Takeaway: Routers = Traffic Directors
-Each router interface has an IP address (e.g., 1.254, 2.254, 9.254).
-Routers forward packets based on network prefixes, not just IPs.
-They use intermediate networks (like Network 9) to link distant parts of the internet.
-End-to-end delivery? It’s a team effort across layers and devices!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 🔢 What is **Logical Addressing**?  
 
@@ -139,8 +121,18 @@ End-to-end delivery? It’s a team effort across layers and devices!
 | **IP (Internet Protocol)** | Core protocol for addressing and routing | IPv4 (most common), IPv6 (future-proof) |
 | **ICMP (Internet Control Message Protocol)** | Used for diagnostics (`ping`, `traceroute`) | Not for user data |
 | **ARP** ⚠️ | Maps IP → MAC (operates at Layer 2/3 boundary) | Critical for local delivery |
-| **RIP, OSPF, EIGRP** | **Routing protocols** – help routers learn best paths | OSPF is link-state; EIGRP is Cisco-proprietary |
+| **RIP (Routing Information Protocol)** | Distance-vector routing protocol that uses hop count to determine best path | Max 15 hops; best for small, simple networks |
+| **SPF (Shortest Path First)** | Algorithm used by link-state protocols to calculate the shortest path to a destination | Core of OSPF; recalculates dynamically when network changes occur |
+| **OSPF (Open Shortest Path First)** | Link-state routing protocol that builds a complete map of the network for fast convergence | Uses SPF algorithm; scalable for large enterprise networks |
+| **EIGRP (Enhanced Interior Gateway Routing Protocol)** | Advanced distance-vector protocol that uses multiple metrics (bandwidth, delay) to find best path | Cisco-proprietary; fast convergence and loop-free routing |
 | **IGMP** | Manages multicast group memberships | Used in video streaming, online gaming |
+| **IP (Internet Protocol)** | Core protocol for addressing and routing | IPv4 (most common), IPv6 (future-proof) |
+| **RARP (Reverse Address Resolution Protocol)** | Maps a MAC address to an IP address | Used in older networks; largely replaced by BOOTP and DHCP |
+| **ATM (Asynchronous Transfer Mode)** | High-speed cell-based networking for voice, video, and data | Uses fixed-size cells (53 bytes); common in legacy WANs |
+| **IS-IS (Intermediate System to Intermediate System)** | Link-state routing protocol for routing data within a network | Commonly used in large ISPs and backbone networks; works well with OSI model |
+| **IPsec (Internet Protocol Security)** | Secures IP communications by authenticating and encrypting packets | Operates at Network layer; often used in VPNs |
+| **ICMP (Internet Control Message Protocol)** | Reports errors and sends operational info for IP networks | Used by tools like `ping` and `traceroute` |
+| **MPLS (Multiprotocol Label Switching)** | Speeds up and shapes network traffic flows | Uses labels instead of IP addresses for fast forwarding; sits between Layers 2 and 3 |
 
 
 
@@ -158,6 +150,12 @@ End-to-end delivery? It’s a team effort across layers and devices!
 
 > - **Router** 🔄 – The **primary device** that operates at Layer 3. Makes decisions based on **IP addresses**.
 > - **Layer 3 Switch** ⚡ – A switch with routing capabilities. Common for **inter-VLAN routing** in enterprise networks.
+
+🧭 Key Takeaway: Routers = Traffic Directors
+Each router interface has an IP address (e.g., 1.254, 2.254, 9.254).
+Routers forward packets based on network prefixes, not just IPs.
+They use intermediate networks (like Network 9) to link distant parts of the internet.
+End-to-end delivery? It’s a team effort across layers and devices!
 
 ## 🎯 Exam Tips (CompTIA Network+, CCNA, etc.)
 
