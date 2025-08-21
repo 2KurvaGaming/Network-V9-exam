@@ -179,6 +179,9 @@ Then, this whole thing — header + payload + trailer — is sent to Layer 1, wh
 
 ---
 
+<h1 align="center">Terms & Definitions</h1>
+
+---
 ## 🌐 Data Link Layer (Layer 2) – Protocols & Technologies
 
 | **Protocol / Technology** | **Function / Purpose** | **Key Standard / Notes** | **Exam Tip 🎯** |
