@@ -209,6 +209,20 @@ IP addresses aren’t random — they follow a **smart structure** that helps ro
 
 ---
 
+### 🌐 **Router (Network Layer – Layer 3)**  
+*"The Global Navigator"*
+
+- 💬 **Purpose**: Connects *different networks* and routes packets between them (like your home network to the internet).  
+- 🌍 Uses **IP addresses** (logical addresses) to determine the best path.  
+- 🧭 Works at **Layer 3** of the OSI model.  
+- 🛣️ Makes decisions based on **routing tables** — knows how to reach other networks.  
+- 🌐 Enables communication across the internet — connects LANs to WANs.  
+- 📦 Performs **packet forwarding**, **NAT**, **firewalling**, and more.
+
+> 💡 Think: “Router = the GPS that gets your data from city to city.”
+
+---
+
 🧭 Key Takeaway: Routers = Traffic Directors
 Each router interface has an IP address (e.g., 1.254, 2.254, 9.254).
 Routers forward packets based on network prefixes, not just IPs.
