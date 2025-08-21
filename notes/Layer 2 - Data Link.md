@@ -179,7 +179,7 @@ Then, this whole thing — header + payload + trailer — is sent to Layer 1, wh
 
 ---
 
-<h1 align="center">Terms & Definitions</h1>
+<h1 align="center">Terms & Notes</h1>
 
 ---
 ## 🌐 Data Link Layer (Layer 2) – Protocols & Technologies
@@ -229,6 +229,23 @@ Then, this whole thing — header + payload + trailer — is sent to Layer 1, wh
 - For this reason, it is commonly paired with IPsec, which operates at the network layer (Layer 3) and provides confidentiality, authentication, and integrity through encryption.
  
 - The combined use of L2TP with IPsec—often referred to as L2TP/IPsec—creates a more secure VPN solution by leveraging the tunneling functionality of L2TP and the security features of IPsec.
+
+---
+
+###### 🔄 **Switch (Data Link Layer – Layer 2)**  
+*"The Local Traffic Cop"*
+
+- 💬 **Purpose**: Connects devices *within the same network* (like your home or office LAN).  
+- 🧩 Uses **MAC addresses** (physical hardware addresses) to forward frames.  
+- 🌐 Works at **Layer 2** of the OSI model.  
+- ⚡ Builds a **MAC address table** — learns which device is on which port.  
+- 🔁 Forwards data *only* to the correct destination port → fast, efficient, low latency.  
+- 🏠 Example: Your laptop, phone, and printer all connect to the same switch at home.
+
+> 💡 Think: “Switch = keeps things moving *inside* the neighborhood.”
+
+---
+
 
 
 
