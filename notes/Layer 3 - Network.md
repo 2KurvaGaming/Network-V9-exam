@@ -223,6 +223,22 @@ IP addresses aren’t random — they follow a **smart structure** that helps ro
 
 ---
 
+### 🔁 Key Differences: Switch vs Router
+
+| Feature | **Switch** | **Router** |
+|--------|-----------|-----------|
+| **OSI Layer** | Layer 2 (Data Link) | Layer 3 (Network) |
+| **Address Type** | MAC address (physical) | IP address (logical) |
+| **Scope** | Same network (LAN) | Between different networks |
+| **Main Job** | Forward frames within a network | Route packets between networks |
+| **Broadcast Handling** | Floods broadcasts to all ports | Blocks broadcasts (by default) |
+| **NAT Support** | ❌ No | ✅ Yes (e.g., shares one public IP) |
+| **Security Features** | Basic (port security) | Advanced (firewall, ACLs) |
+| **Routing Intelligence** | ❌ Learns MACs, no routing logic | ✅ Uses routing protocols (RIP, OSPF, etc.) |
+| **Used In** | Offices, schools, home LANs | Homes (to internet), ISPs, enterprise networks |
+
+---
+
 🧭 Key Takeaway: Routers = Traffic Directors
 Each router interface has an IP address (e.g., 1.254, 2.254, 9.254).
 Routers forward packets based on network prefixes, not just IPs.
