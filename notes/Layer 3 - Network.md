@@ -178,7 +178,7 @@ IP addresses aren’t random — they follow a **smart structure** that helps ro
 |--------|--------|-------|
 | **IP (Internet Protocol)** | Core protocol for addressing and routing | IPv4 (most common), IPv6 (future-proof) |
 | **ICMP (Internet Control Message Protocol)** | Used for diagnostics (`ping`, `traceroute`) | Not for user data |
-| **ARP** ⚠️ | Maps IP → MAC (operates at Layer 2/3 boundary) | Critical for local delivery |
+| **ARP** ⚠️ ADDRESS RESOLUTION PROTOCOL  | Maps IP → MAC (operates at Layer 2/3 boundary) | Critical for local delivery |
 | **RIP (Routing Information Protocol)** | Distance-vector routing protocol that uses hop count to determine best path | Max 15 hops; best for small, simple networks |
 | **SPF (Shortest Path First)** | Algorithm used by link-state protocols to calculate the shortest path to a destination | Core of OSPF; recalculates dynamically when network changes occur |
 | **OSPF (Open Shortest Path First)** | Link-state routing protocol that builds a complete map of the network for fast convergence | Uses SPF algorithm; scalable for large enterprise networks |
