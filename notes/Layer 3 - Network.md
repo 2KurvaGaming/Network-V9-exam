@@ -2,9 +2,7 @@
 
 # 🥅 Layer 3 is the Network layer. 
 
-### (Logical network addressing and forwarding.)
-
-## This layer is responsible for moving data across a network of networks (different networks, not just the same network) known as an internetwork. 
+### Logical network addressing and forwarding (Kinda like a GPS)
 
 🧩 Main Responsibilities of the Network Layer
 
