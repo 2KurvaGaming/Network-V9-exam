@@ -40,17 +40,24 @@ So in short:
 👉 A **logical segment** in the Data Link layer is a **software-defined group of devices** that communicate at Layer 2, share a broadcast domain, and are often created using technologies like **VLANs**.
 
 ---
-## Media Access Control (MAC) Layer: 
+## Media Access Control (MAC) Layer 2: **MAC Address** (Physical/Hardware)
 
-### **MAC Address**
+### The Purpose of the MAC address is so the network devices can communicate with ea other
+
+[https://youtu.be/TIiQiw7fpsU?si=eKMZJi5UrVkQDFpd](https://youtu.be/TIiQiw7fpsU?si=eKMZJi5UrVkQDFpd)
+
 - A MAC (Media Access Control) address is a unique hardware identifier assigned to a network interface card (NIC) or network interface.
-- It is a 48-bit address typically expressed in hexadecimal format (e.g., `00:1A:2B:3C:4D:5E`).
+- It is a 6byte hexadecimal number/48-bit address typically expressed in hexadecimal format (e.g., `00:1A:2B:3C:4D:5E`).
 - MAC addresses operate at the Data Link layer (Layer 2) of the OSI model.
 - They are used to identify devices on the same local network segment.
 - The first half of the address identifies the manufacturer (OUI), while the second half is the device-specific identifier.
 - MAC addresses enable communication within the same Layer 2 network by ensuring frames are delivered to the correct physical device.
 - The frame, as the Layer 2 PDU, encapsulates packets received from the network layer (Layer 3) and prepares them for transmission as    bits at the physical layer (Layer 1)
 - IEEE 802.1 standard defines the LLC sublayer and its operations.
+
+<img width="895" height="434" alt="Screenshot 2025-08-21 032809" src="https://github.com/user-attachments/assets/0844868e-8656-4155-8663-158cfcaf906f" />
+
+<img width="885" height="457" alt="Screenshot 2025-08-21 032927" src="https://github.com/user-attachments/assets/1b6e05f9-0bbe-428f-a31e-0520bfc3a496" />
 
 ---
 
@@ -232,7 +239,8 @@ Then, this whole thing — header + payload + trailer — is sent to Layer 1, wh
 
 ---
 
-### 🔄 **Switch (Data Link Layer – Layer 2)**  
+### 🔄 **Switch (Data Link Layer – Layer 2)**  ✍️ Its Function is to create a network by allowing devices to talk to each other and exchange data
+
 *"The Local Traffic Cop"*
 
 - 💬 **Purpose**: Connects devices *within the same network* (like your home or office LAN).  
@@ -243,6 +251,10 @@ Then, this whole thing — header + payload + trailer — is sent to Layer 1, wh
 - 🏠 Example: Your laptop, phone, and printer all connect to the same switch at home.
 
 > 💡 Think: “Switch = keeps things moving *inside* the neighborhood.”
+
+<img width="886" height="455" alt="Screenshot 2025-08-21 023925" src="https://github.com/user-attachments/assets/1b48e581-6d9b-4308-b7f2-b35eb74290aa" />
+
+<img width="885" height="455" alt="image" src="https://github.com/user-attachments/assets/d05b6d2b-e6a6-4756-a7ad-efacc5afc6b8" />
 
 ---
 
