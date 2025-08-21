@@ -288,15 +288,6 @@ Let’s dive in — same fun, clear, emoji-powered style you love! 💖
 | **NAT & Firewall** | Limited or no NAT (not designed for internet sharing) | Full NAT, firewall, DHCP server built-in |
 | **Scalability** | Perfect for large internal networks with many VLANs | Scales for internet edge, complex routing, and security |
 
-
-
-
----
-
-<img width="977" height="512" alt="image" src="https://github.com/user-attachments/assets/f3004115-6b88-4363-9a4a-db3d4d831d89" />
-
----
-
 ---
 
 ### 🧠 Real-World Example: Office Network
@@ -315,11 +306,6 @@ Let’s dive in — same fun, clear, emoji-powered style you love! 💖
 ✅ Only traffic going to the internet leaves the switch
 
 > 🎯 Result: Less router load, faster internal communication, better performance!
-
-
-
-
-
 
 🧭 Key Takeaway: Routers = Traffic Directors
 Each router interface has an IP address (e.g., 1.254, 2.254, 9.254).
