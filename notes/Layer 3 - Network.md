@@ -15,6 +15,7 @@ While Layer 2 (Data Link) handles communication within a single network using MA
   - It encapsulates data from the Transport Layer into packets and adds a header containing the source and destination IP addresses.
   - Routers then read this header to make forwarding decisions
   - Supports both unicast and multicast traffic
+  - At layer 3, each packet is given a destination network address. Routers are configured with information about how to reach these different logical networks. The packet is forwarded, router by router (or hop by hop), through the internetwork to the target network. Once it has reached the destination network, the hardware address can be used to deliver the packet to the target node.
     
 💥 Without Layer 3, large-scale networks like the internet simply wouldn’t function.
 
