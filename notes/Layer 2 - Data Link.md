@@ -99,7 +99,7 @@ So in short:
 
 ## ⭐ The Data Link layer performs an encapsulation function, organizing the stream of bits from the Physical layer into structured units called ***frames.***
 
- <h2 align="center">(Common term for the PROTOCOL DATA UNIT (PDU) for layer 2.)</h2> 
+ <h2 align="center">(Common term for the ** PROTOCOL DATA UNIT (PDU) ** for layer 2.)</h2> 
  
 - Each **frame** Contains the data from higher layers, along with headers and trailers added by the data link layer.
 - These headers include the source and destination MAC (Media Access Control) addresses, which are used for physical addressing within the local network
