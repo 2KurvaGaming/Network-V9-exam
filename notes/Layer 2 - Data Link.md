@@ -232,7 +232,7 @@ Then, this whole thing — header + payload + trailer — is sent to Layer 1, wh
 
 ---
 
-###### 🔄 **Switch (Data Link Layer – Layer 2)**  
+### 🔄 **Switch (Data Link Layer – Layer 2)**  
 *"The Local Traffic Cop"*
 
 - 💬 **Purpose**: Connects devices *within the same network* (like your home or office LAN).  
