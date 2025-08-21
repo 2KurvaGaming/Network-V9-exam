@@ -4,12 +4,15 @@
 
 ### (Logical network addressing and forwarding.)
 
-## This layer is responsible for moving data around a network of networks, known as an internetwork. 
+## This layer is responsible for moving data across a network of networks (different networks, not just the same network) known as an internetwork. 
 
 🧩 Main Responsibilities of the Network Layer
-The Network Layer (Layer 3) is responsible for enabling communication between devices on different networks — not just within the same local network. 
 
-While Layer 2 (Data Link) handles communication within a single network using MAC addresses
+🔹 The Network Layer 3 is responsible for enabling communication between devices on different networks — not just within the same local network. 
+
+🔹 The networks are often heterogeneous; that is, they use a variety of Physical layer media and Data Link protocols. The main appliance working at layer 3 is the router.
+
+🔹 While Layer 2 (Data Link) handles communication within a single network using MAC addresses
 
 📌 Layer 3 steps 🪜 up by using logical IP addresses to identify source and destination devices across interconnected networks, such as the internet.
 
