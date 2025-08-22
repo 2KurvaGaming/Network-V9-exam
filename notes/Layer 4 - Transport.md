@@ -51,7 +51,7 @@
 ## 📌 **One of the functions of the Transport layer is to identify each type of network application by assigning it a port number.**
   - For example,  data requested from an HTTP web application can be identified as port 80, while data sent to an email server can be identified as port 25.
     
-**At the Transport layer, on the sending host, data from the upper layers is packaged as a series of layer 4 PDUs, referred to as segments.**
+## 📍 **At the Transport layer, on the sending host, data from the upper layers is packaged as a series of layer 4 PDUs, referred to as segments.**
 
 - Each segment is tagged with the application's port number.
 - The segment is then passed to the Network layer for delivery.
