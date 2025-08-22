@@ -4,7 +4,9 @@
 
 🎉 **MISSION: LAYER 4 – THE TRANSPORT LAYER**  
 🔥 *"The Traffic Controller of the Internet Highway"*
-🚦 **Ensures data arrives *complete*, *correct*, and *in order*.** 
+
+🚦 **Ensures data arrives 
+    *complete*, *correct*, and *in order*.** 
 
 🚦 **Utilizes Port Numbers to keep application sessions unique**
 
@@ -205,6 +207,8 @@ Certainly! Below is an **expanded and categorized well-known port numbers table*
 | **22** | TCP/UDP | SSH | Secure Shell – encrypted remote login and command execution |
 | **23** | TCP | Telnet | Unencrypted remote login (insecure, largely deprecated) |
 | **25** | TCP | SMTP | Simple Mail Transfer Protocol – sending email between servers |
+| **49** | TACACS | Terminal Access Controller Access Control System |
+| **50** | ESP | Encapsulating Security Payload |
 | **53** | TCP/UDP | DNS | Domain Name System – translates domain names to IP addresses |
 | **67** | UDP | DHCP (Server) | Dynamic Host Configuration Protocol – server assigns IP addresses |
 | **68** | UDP | DHCP (Client) | DHCP – client receives IP configuration |
@@ -215,6 +219,7 @@ Certainly! Below is an **expanded and categorized well-known port numbers table*
 | **123** | UDP | NTP | Network Time Protocol – synchronizes system clocks |
 | **135** | TCP | RPC | Remote Procedure Call – Windows service communication |
 | **137–139** | TCP/UDP | NetBIOS | Legacy Windows networking for file/printer sharing |
+| ***139*** | DFS |Distributed File Sysem |
 | **143** | TCP | IMAP | Internet Message Access Protocol – retrieves and manages email |
 | **161** | UDP | SNMP | Simple Network Management Protocol – monitors network devices |
 | **162** | UDP | SNMP Trap | SNMP – receives alerts (traps) from devices |
@@ -222,12 +227,15 @@ Certainly! Below is an **expanded and categorized well-known port numbers table*
 | **443** | TCP | HTTPS | HTTP Secure – encrypted web traffic (SSL/TLS) |
 | **445** | TCP | SMB/CIFS | Server Message Block – modern Windows file and printer sharing |
 | **465** | TCP | SMTPS | Legacy secure SMTP (SSL) – sending encrypted email |
+| **500** | IPSec ISAKMP | IPSec SAs negotiation Protocol |
 | **514** | UDP | Syslog | System logging service – collects log messages from devices |
 | **515** | TCP | LPD | Line Printer Daemon – print job spooling |
 | **587** | TCP | SMTP (Submission) | Modern secure email submission (TLS - TransportLayerSec ) – used by email clients |
 | **636** | TCP | LDAPS | LDAP over SSL/TLS – secure directory access |
 | **993** | TCP | IMAPS | IMAP over SSL/TLS – secure email retrieval |
 | **995** | TCP | POP3S | POP3 over SSL/TLS – secure email retrieval |
+| **1701** | L2TP | Layer 2 Tunneling Protocol |
+| **1723** | PPTP | Point to Point Tunneling |
 | **5060** | TCP/UDP | SIP | Session Initiation Protocol – voice/video calls (VoIP) signaling |
 | **5061** | TCP | SIPS | SIP over TLS – secure VoIP signaling |
 
