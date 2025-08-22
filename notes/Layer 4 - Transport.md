@@ -3,8 +3,12 @@
 # Layer 4 is Transport 
 
 🎉 **MISSION: LAYER 4 – THE TRANSPORT LAYER**  
-🔥 *"The Traffic Controller of the Internet Highway"*  
-🚦 **Ensures data arrives *complete*, *correct*, and *in order***  
+🔥 *"The Traffic Controller of the Internet Highway"*
+🚦 **Ensures data arrives *complete*, *correct*, and *in order*.** 
+
+🚦 **Utilizes Port Numbers to keep application sessions unique**
+
+🔥 ***By creating a network socket = Source & Dest IP Addrss + Source & Dest Port Number***
 
 Layer 4 Transport — where reliability meets speed, and your data gets its travel agent, quality inspector, and delivery scheduler all in one. 💻🚀
 
@@ -15,22 +19,44 @@ Layer 4 Transport — where reliability meets speed, and your data gets its trav
 > **💡 Definition**:
 > 
 > The **Transport Layer** (Layer 4 of the OSI model) is responsible for **end-to-end communication**, ensuring data is delivered **reliably, in sequence, and without errors** between two hosts — *regardless of the underlying network*.
-> 
-> ## 📌 **One of the functions of the Transport layer is to identify each type of network application by assigning it a port number.**
->   - For example,  data requested from an HTTP web application can be identified as port 80, while data sent to an email server can be identified as port 25.
->     
-> **At the Transport layer, on the sending host, data from the upper layers is packaged as a series of layer 4 PDUs, referred to as segments.**
 
-  > Each segment is tagged with the application's port number.
-> 
-  > The segment is then passed to the Network layer for delivery.
-> 
-  > Many different hosts could be transmitting multiple HTTP and email packets at the same time
-> 
-  > These are multiplexed using the port numbers along with the source and destination network addresses onto the same link.
-> 
-> The Transport layer can also implement reliable data delivery mechanisms, should the application require it. Reliable delivery means that any lost or damaged packets are resent.
-> 
+### 🚆 **The Two Main Protocols: TCP vs UDP**
+
+> 🎭 *"The Reliable Truck vs The Speedy Motorcycle"*
+
+| **Feature** | **TCP (Transmission Control Protocol) REC 793** 🚛 | **UDP (User Datagram Protocol) REC768** 🏍️ |
+|------------|----------------------------------------|--------------------------------------|
+| **Connection Type** | ✅ Connection-oriented (handshake first) | ❌ Connectionless (fire and forget) |
+| **Reliability** | ✅ Guaranteed delivery with ACKs & retransmissions | ❌ Best-effort (no guarantees) |
+| **Ordering** | ✅ Data arrives in order | ❌ No guaranteed order |
+| **Error Checking** | ✅ Full error detection + correction | ✅ Error detection only (no fix) |
+| **Flow Control** | ✅ Yes (sliding window) | ❌ No |
+| **Congestion Control** | ✅ Yes | ❌ No |
+| **Speed** | ⏱️ Slower (overhead for reliability) | ⚡ Very fast |
+| **Header Size** | 20–60 bytes | 8 bytes (lightweight!) |
+| **Use Cases** | Web (HTTP/HTTPS), Email (SMTP), File Transfer (FTP) | Live streaming, VoIP, Online gaming, DNS |
+| **Port Examples** | 80 (HTTP), 443 (HTTPS), 25 (SMTP) | 53 (DNS), 67/68 (DHCP), 123 (NTP) |
+
+> 💡 **Think**:  
+> - **TCP** = Sending a *registered letter* — you get confirmation it arrived.  
+> - **UDP** = Throwing a *postcard into a crowd* — fast, but hope it lands!
+
+<img width="1019" height="617" alt="Screenshot 2025-08-22 042908" src="https://github.com/user-attachments/assets/6e493532-c4bd-4902-962a-0ffec36751c4" />
+</br>
+<img width="1019" height="617" alt="Screenshot 2025-08-22 042908" src="https://github.com/user-attachments/assets/eef9ad75-5593-41ee-a5d9-bafa51e5ebbb" />
+
+## 📌 **One of the functions of the Transport layer is to identify each type of network application by assigning it a port number.**
+  - For example,  data requested from an HTTP web application can be identified as port 80, while data sent to an email server can be identified as port 25.
+    
+**At the Transport layer, on the sending host, data from the upper layers is packaged as a series of layer 4 PDUs, referred to as segments.**
+
+- Each segment is tagged with the application's port number.
+- The segment is then passed to the Network layer for delivery.
+- Many different hosts could be transmitting multiple HTTP and email packets at the same time
+- These are multiplexed using the port numbers along with the source and destination network addresses onto the same link.
+
+The Transport layer can also implement reliable data delivery mechanisms, should the application require it. Reliable delivery means that any lost or damaged packets are resent.
+
 > Devices working at the Transport layer include multilayer switches - usually working as load balancers - and many types of security appliances, such as more advanced firewalls and intrusion detection systems (IDSs).
 
 <img width="768" height="346" alt="transport_layer_diagram" src="https://github.com/user-attachments/assets/aa9d342c-d634-4bf5-b472-1aba29f02336" />
@@ -44,13 +70,6 @@ Layer 4 Transport — where reliability meets speed, and your data gets its trav
 ###### - The diagram shows these data segments traveling across the network, encapsulated as Layer 3 packets in Layer 2 frames, before arriving at Host 2.1. Once at the destination, Host 2.1 examines the port number of each segment to identify the application type - such as web server, mail service, file sharing, or voice service - and directs the data accordingly for processing.
 
 ###### - The image visually conveys how the Transport layer uses port numbers to combine, transport, and then separate and deliver multiple types of application data coming from different hosts, ensuring each data type reaches the correct program on the receiving device.
-
-
-### 🛜 At the Network and Data Link layers, the port number is ignored - it becomes part of the data payload and is invisible to the routers and switches that implement the addressing and forwarding functions of these layers. 
-
-### 📞 At the receiving host, each segment is decapsulated, identified by its port number, and passed to the relevant handler at the Application layer. Put another way, the traffic stream is de-multiplexed.
-
-It’s like the **postmaster general** of the internet: doesn’t deliver the mail itself, but makes sure it’s packed right, tracked, and resent if lost.
 
 ---
 
@@ -69,28 +88,6 @@ It’s like the **postmaster general** of the internet: doesn’t deliver the ma
 
 ---
 
-### 🚆 **The Two Main Protocols: TCP vs UDP**
-
-> 🎭 *"The Reliable Truck vs The Speedy Motorcycle"*
-
-| **Feature** | **TCP (Transmission Control Protocol)** 🚛 | **UDP (User Datagram Protocol)** 🏍️ |
-|------------|----------------------------------------|--------------------------------------|
-| **Connection Type** | ✅ Connection-oriented (handshake first) | ❌ Connectionless (fire and forget) |
-| **Reliability** | ✅ Guaranteed delivery with ACKs & retransmissions | ❌ Best-effort (no guarantees) |
-| **Ordering** | ✅ Data arrives in order | ❌ No guaranteed order |
-| **Error Checking** | ✅ Full error detection + correction | ✅ Error detection only (no fix) |
-| **Flow Control** | ✅ Yes (sliding window) | ❌ No |
-| **Congestion Control** | ✅ Yes | ❌ No |
-| **Speed** | ⏱️ Slower (overhead for reliability) | ⚡ Very fast |
-| **Header Size** | 20–60 bytes | 8 bytes (lightweight!) |
-| **Use Cases** | Web (HTTP/HTTPS), Email (SMTP), File Transfer (FTP) | Live streaming, VoIP, Online gaming, DNS |
-| **Port Examples** | 80 (HTTP), 443 (HTTPS), 25 (SMTP) | 53 (DNS), 67/68 (DHCP), 123 (NTP) |
-
-> 💡 **Think**:  
-> - **TCP** = Sending a *registered letter* — you get confirmation it arrived.  
-> - **UDP** = Throwing a *postcard into a crowd* — fast, but hope it lands!
-
----
 ## 👉 The Transport Layer 4 is also responsible for Data Flow Control 
 ---
 ### 🔹 **What is Data Flow Control?**
@@ -158,48 +155,6 @@ The Transport Layer uses **port numbers** to direct data to the right applicatio
 | **0–1023** | 🛠️ **Well-known ports** – assigned to core services | `80` (HTTP), `443` (HTTPS), `21` (FTP), `25` (SMTP) |
 | **1024–49151** | 🧩 **Registered ports** – used by apps/services | `3306` (MySQL), `5432` (PostgreSQL), `8080` (HTTP alt) |
 | **49152–65535** | 🕶️ **Dynamic/Private ports** – temporary, client-side | Used when your browser connects to a server |
-
-> 🔍 **Live Example
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -297,6 +252,8 @@ Certainly! Below is an **expanded and categorized well-known port numbers table*
 | 20/21 | FTP | Traditional file transfer |
 | 69 | TFTP | Simple
 
+<img width="1050" height="580" alt="Screenshot 2025-08-22 043051" src="https://github.com/user-attachments/assets/9a81c902-c911-4fab-8058-9362836d3138" />
+
 ---
 
 ### ✨ **Detailed Protocol List Reference**
@@ -392,3 +349,12 @@ Certainly! Below is an **expanded and categorized well-known port numbers table*
 | Zigbee | Zigbee | Low-power, low-data-rate wireless protocol for IoT and smart home applications. | Application (7) |
 
 ---
+
+### 🛜 At the Network and Data Link layers, the port number is ignored - it becomes part of the data payload and is invisible to the routers and switches that implement the addressing and forwarding functions of these layers. 
+
+### 📞 At the receiving host, each segment is decapsulated, identified by its port number, and passed to the relevant handler at the Application layer. Put another way, the traffic stream is de-multiplexed.
+
+It’s like the **postmaster general** of the internet: doesn’t deliver the mail itself, but makes sure it’s packed right, tracked, and resent if lost.
+
+---
+
