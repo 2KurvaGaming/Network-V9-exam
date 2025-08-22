@@ -2,17 +2,18 @@
 
 # Layer 4 is Transport 
 
-🎉 **MISSION: LAYER 4 – THE TRANSPORT LAYER**  
-🔥 *"The Traffic Controller of the Internet Highway"*
+🎉 **MISSION: LAYER 4 – THE TRANSPORT LAYER**  🛣️ 👮‍♀️*"The Traffic Controller of the Internet Highway" 🚓*
 
-🚦 **Ensures data arrives 
-    *complete*, *correct*, and *in order*.** 
+🚦 **Ensures data arrives: 
+
+   🚩*Reliably* 
+   🚩*Without Errors*
+   🚩*In sSequence*** 
+   
+---
 
 🚦 **Utilizes Port Numbers to keep application sessions unique**
-
-🔥 ***By creating a network socket = Source & Dest IP Addrss + Source & Dest Port Number***
-
-Layer 4 Transport — where reliability meets speed, and your data gets its travel agent, quality inspector, and delivery scheduler all in one. 💻🚀
+   🔥 ***By creating a network socket = Source & Dest IP Addrss + Source & Dest Port Number***
 
 ---
 
@@ -20,7 +21,7 @@ Layer 4 Transport — where reliability meets speed, and your data gets its trav
 
 > **💡 Definition**:
 > 
-> The **Transport Layer** (Layer 4 of the OSI model) is responsible for **end-to-end communication**, ensuring data is delivered **reliably, in sequence, and without errors** between two hosts — *regardless of the underlying network*.
+> The **Transport Layer** (Layer 4 of the OSI model) is responsible for **end-to-end communication**, ensuring data is delivered **, in sequence, and without errors** between two hosts — *regardless of the underlying network*.
 
 ### 🚆 **The Two Main Protocols: TCP vs UDP**
 
