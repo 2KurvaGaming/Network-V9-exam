@@ -269,7 +269,7 @@ Certainly! Below is an **expanded and categorized well-known port numbers table*
 | **465** | TCP | SMTPS | Legacy secure SMTP (SSL) – sending encrypted email |
 | **514** | UDP | Syslog | System logging service – collects log messages from devices |
 | **515** | TCP | LPD | Line Printer Daemon – print job spooling |
-| **587** | TCP | SMTP (Submission) | Modern secure email submission (TLS) – used by email clients |
+| **587** | TCP | SMTP (Submission) | Modern secure email submission (TLS - TransportLayerSec ) – used by email clients |
 | **636** | TCP | LDAPS | LDAP over SSL/TLS – secure directory access |
 | **993** | TCP | IMAPS | IMAP over SSL/TLS – secure email retrieval |
 | **995** | TCP | POP3S | POP3 over SSL/TLS – secure email retrieval |
@@ -297,4 +297,98 @@ Certainly! Below is an **expanded and categorized well-known port numbers table*
 | 20/21 | FTP | Traditional file transfer |
 | 69 | TFTP | Simple
 
+---
 
+### ✨ **Detailed Protocol List Reference**
+
+| Protocol Acronym | Full Name | Brief Description | OSI Layer |
+|------------------|---------|-------------------|---------|
+| AH | Authentication Header | Part of IPSec; provides data integrity, authentication, and anti-replay (no encryption). | Network (3) |
+| ARP | Address Resolution Protocol | Maps IPv4 addresses to MAC addresses on a local network. | Data Link (2) |
+| BGP | Border Gateway Protocol | Routes traffic between autonomous systems on the internet (exterior gateway protocol). | Application (7) |
+| BOOTP | Bootstrap Protocol | Predecessor to DHCP; assigns IP addresses during boot process. | Application (7) |
+| CARP | Common Address Redundancy Protocol | Provides router redundancy (used in BSD systems). | Network (3) |
+| CoAP | Constrained Application Protocol | Lightweight protocol for IoT devices using UDP. | Application (7) |
+| DHCP | Dynamic Host Configuration Protocol | Automatically assigns IP addresses, subnet masks, gateways, and DNS. | Application (7) |
+| DCCP | Datagram Congestion Control Protocol | Provides congestion control for real-time apps without reliability (e.g., streaming). | Transport (4) |
+| DNS | Domain Name System | Translates domain names (e.g., brave.com) into IP addresses. | Application (7) |
+| DNSSEC | DNS Security Extensions | Adds cryptographic authentication to DNS responses to prevent spoofing. | Application (7) |
+| DoH | DNS over HTTPS | Encrypts DNS queries using HTTPS to enhance privacy. | Application (7) |
+| DoT | DNS over TLS | Encrypts DNS queries using TLS for secure name resolution. | Application (7) |
+| DTLS | Datagram Transport Layer Security | TLS adapted for UDP-based applications (e.g., WebRTC, SIP). | Transport (4) |
+| EAP | Extensible Authentication Protocol | Framework for authentication in wireless and point-to-point connections. | Data Link (2) / Network (3) |
+| EIGRP | Enhanced Interior Gateway Routing Protocol | Cisco-proprietary routing protocol using DUAL algorithm. | Network (3) |
+| ESP | Encapsulating Security Payload | Part of IPSec; provides confidentiality, integrity, and anti-replay. | Network (3) |
+| FTP | File Transfer Protocol | Transfers files between client and server (unencrypted). | Application (7) |
+| FTPS | File Transfer Protocol Secure | FTP with added SSL/TLS encryption. | Application (7) |
+| GRE | Generic Routing Encapsulation | Tunnels various network layer protocols over IP. | Network (3) |
+| HSRP | Hot Standby Router Protocol | Cisco-proprietary router failover protocol for high availability. | Network (3) |
+| HTTP | Hypertext Transfer Protocol | Foundation of web data communication; requests and delivers web pages. | Application (7) |
+| HTTPS | Hypertext Transfer Protocol Secure | HTTP secured with TLS/SSL encryption. | Application (7) |
+| ICMP | Internet Control Message Protocol | Used for error reporting and diagnostics (e.g., `ping`, `traceroute`). | Network (3) |
+| ICMPv6 | Internet Control Message Protocol version 6 | ICMP for IPv6; includes Neighbor Discovery and address autoconfiguration. | Network (3) |
+| IGMP | Internet Group Management Protocol | Manages IPv4 multicast group memberships. | Network (3) |
+| IMAP | Internet Message Access Protocol | Retrieves and manages email on the server (supports folders, sync). | Application (7) |
+| IPSec | Internet Protocol Security | Suite for securing IP communications via encryption and authentication. | Network (3) |
+| IS-IS | Intermediate System to Intermediate System | Link-state routing protocol used in large-scale ISP networks. | Network (3) |
+| Kerberos | Kerberos | Network authentication protocol using tickets to verify identities securely. | Application (7) |
+| LDAP | Lightweight Directory Access Protocol | Accesses and manages directory services (e.g., Microsoft Active Directory). | Application (7) |
+| LDAPS | LDAP over SSL/TLS | LDAP secured with SSL/TLS encryption. | Application (7) |
+| LACP | Link Aggregation Control Protocol | Dynamically bundles multiple physical links into one logical link (link aggregation). | Data Link (2)
+| MAC | Media Access Control | Sublayer of Data Link layer that controls how devices access the network medium. | Data Link (2) |
+| MDNS | Multicast DNS | Resolves hostnames to IP addresses without a central DNS server (used in zero-configuration networks). | Application (7) |
+| MLD | Multicast Listener Discovery | IPv6 equivalent of IGMP; manages multicast group membership. | Network (3) |
+| MQTT | Message Queuing Telemetry Transport | Lightweight publish-subscribe protocol for IoT and low-bandwidth environments. | Application (7) |
+| NAC | Network Access Control | Enforces security policies on devices before granting network access. | Data Link (2) / Network (3) |
+| NAT | Network Address Translation | Translates private IP addresses to public ones (and vice versa) for internet access. | Network (3) |
+| NetBIOS | Network Basic Input/Output System | Legacy API for network communication in Windows (file/printer sharing). | Session (5) |
+| NetFlow | NetFlow | Cisco protocol for collecting IP traffic data (monitoring, analysis, security). | Application (7) |
+| NTP | Network Time Protocol | Synchronizes clocks across networked systems to ensure accurate timekeeping. | Application (7) |
+| OSPF | Open Shortest Path First | Link-state interior gateway routing protocol for IP networks. | Network (3) |
+| PAP | Password Authentication Protocol | Simple authentication method for PPP connections (passwords sent in clear text). | Data Link (2) |
+| PIM | Protocol Independent Multicast | Routing protocol for efficient multicast delivery. | Network (3) |
+| PING | Packet InterNet Groper | Utility using ICMP to test connectivity between hosts. | Network (3) |
+| POP3 | Post Office Protocol version 3 | Downloads emails from server to client; typically deletes from server. | Application (7) |
+| PPP | Point-to-Point Protocol | Data link protocol for direct communication between two nodes (e.g., dial-up). | Data Link (2) |
+| PPPoE | PPP over Ethernet | Extends PPP to operate over Ethernet networks (common in DSL). | Data Link (2) |
+| PPTP | Point-to-Point Tunneling Protocol | Early VPN protocol for creating secure tunnels (now considered insecure). | Data Link (2) |
+| RADIUS | Remote Authentication Dial-In User Service | Centralized authentication, authorization, and accounting (AAA) for network access. | Application (7) |
+| RARP | Reverse Address Resolution Protocol | Maps MAC addresses to IP addresses (largely obsolete, replaced by DHCP). | Data Link (2) |
+| RIP | Routing Information Protocol | Distance-vector routing protocol for small to medium networks. | Network (3) |
+| RSTP | Rapid Spanning Tree Protocol | Faster version of STP; prevents loops in switched networks. | Data Link (2) |
+| RTP | Real-time Transport Protocol | Delivers audio and video for real-time applications (e.g., VoIP, video conferencing). | Application (7) |
+| RTCP | RTP Control Protocol | Companion to RTP; monitors transmission quality and QoS. | Application (7) |
+| RTSP | Real-Time Streaming Protocol | Controls delivery of streaming media (play, pause, stop). | Application (7) |
+| SFTP | SSH File Transfer Protocol | Secure file transfer over SSH (not related to FTP). | Application (7) |
+| SIP | Session Initiation Protocol | Establishes, modifies, and terminates multimedia sessions (e.g., voice, video calls). | Application (7) |
+| SIPS | SIP Secure | SIP secured with TLS encryption for secure signaling. | Application (7) |
+| SLAAC | Stateless Address Autoconfiguration | IPv6 feature allowing devices to self-configure IP addresses. | Network (3) |
+| SLIP | Serial Line Internet Protocol | Early protocol for transmitting IP packets over serial lines (obsolete). | Data Link (2) |
+| SNMP | Simple Network Management Protocol | Monitors and manages network devices (routers, switches, servers). | Application (7) |
+| SOAP | Simple Object Access Protocol | Protocol for exchanging structured information in web services (uses XML). | Application (7) |
+| SPDY | Speedy | Early Google protocol to speed up web traffic (precursor to HTTP/2). | Application (7) |
+| SSH | Secure Shell | Securely accesses and manages remote devices over unsecured networks. | Application (7) |
+| SSL | Secure Sockets Layer | Early cryptographic protocol for secure communication (deprecated, replaced by TLS). | Presentation (6) / Session (5) |
+| STP | Spanning Tree Protocol | Prevents network loops in Ethernet networks with redundant paths. | Data Link (2) |
+| SYSLOG | System Logging Protocol | Sends and stores log messages from network devices and systems. | Application (7) |
+| TACACS | Terminal Access Controller Access-Control System | Cisco protocol for remote authentication (older version). | Application (7) |
+| TACACS+ | Terminal Access Controller Access-Control System Plus | Enhanced version of TACACS with separate authentication, authorization, and accounting. | Application (7) |
+| TCP | Transmission Control Protocol | Reliable, connection-oriented transport protocol with error recovery and flow control. | Transport (4) |
+| TELNET | Teletype Network | Unsecured remote terminal access protocol (largely replaced by SSH). | Application (7) |
+| TLS | Transport Layer Security | Successor to SSL; encrypts data in transit (used in HTTPS, email, etc.). | Presentation (6) / Session (5) |
+| TRILL | Transparent Interconnection of Lots of Links | Modern alternative to STP for efficient multi-path routing in LANs. | Data Link (2) |
+| UDP | User Datagram Protocol | Connectionless transport protocol with low overhead; no delivery guarantees. | Transport (4) |
+| VLAN | Virtual Local Area Network | Logical segmentation of a physical network into isolated broadcast domains. | Data Link (2) |
+| VRRP | Virtual Router Redundancy Protocol | Provides high availability by allowing multiple routers to act as a single virtual gateway. | Network (3) |
+| WAP | Wireless Application Protocol | Early protocol for accessing web-like services on mobile devices. | Application (7) |
+| WebDAV | Web Distributed Authoring and Versioning | Extends HTTP to allow collaborative editing and file management on web servers. | Application (7) |
+| WebSocket | WebSocket Protocol | Enables full-duplex, real-time communication between client and server over a single TCP connection. | Application (7) |
+| WPA | Wi-Fi Protected Access | Security protocol for securing wireless networks (successor to WEP). | Data Link (2) |
+| WPA2 | Wi-Fi Protected Access 2 | Stronger security using AES encryption and 802.11i standard. | Data Link (2) |
+| WPA3 | Wi-Fi Protected Access 3 | Latest Wi-Fi security with improved encryption and protection against brute-force attacks. | Data Link (2) |
+| XMPP | Extensible Messaging and Presence Protocol | Open protocol for real-time messaging, presence, and contact list maintenance. | Application (7) |
+| YANG | Yet Another Next Generation | Data modeling language used with NETCONF/RESTCONF for network configuration. | Application (7) |
+| Z-Wave | Z-Wave | Proprietary wireless protocol for home automation and IoT devices. | Application (7) |
+| Zigbee | Zigbee | Low-power, low-data-rate wireless protocol for IoT and smart home applications. | Application (7) |
+
+---
