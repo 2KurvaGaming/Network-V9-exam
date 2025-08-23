@@ -4,12 +4,14 @@
 
 🎉 **MISSION: LAYER 4 – THE TRANSPORT LAYER**  🛣️ 👮‍♀️*"The Traffic Controller of the Internet Highway" 🚓*
 
-🚦 **Ensures data arrives: 
+### 🚦 **Ensures the following:** 
 
-   🚩*Reliably* 
-   🚩*Without Errors*
-   🚩*In sSequence*** 
+  🚩 **Error Checking Protocols at the Transport Layer ensure that data is correctly sent or received Without Errors**
+
+   🚩 **In Sequence / Service Addressing** A number of protocols support many network services. The Transport Layer ensures that data is passed to the right service at the upper layers of the OSI model
    
+   🚩 **Segmentaion** To traverse the network, blocks of data need to be broken into packets of manageable size for the lower layers to handle. 
+
 ---
 
 🚦 **Utilizes Port Numbers to keep application sessions unique**
